@@ -1,2 +1,25 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+
+
+Pseudocode:
+
+Function createConsecutiveSubstrings(str):
+    Create an empty list called substrings
+
+    For each start point and each end point in the string:
+        Take the part of the string from the start to the end
+        Add that part to the list of the substrings
+
+    Return the substrings list
+
+
+
+Solution Explanation:
+
+The solution uses a brute-force approach with two nested loops.
+These two nested loops cause quadratic time because:
+ - The outer loop iterates over each index of the string as a potential starting point for substrings.
+ - The inner loop generates substrings by iterating from the start index to the end of the string.
+The results is O(n^2) time complexity.
